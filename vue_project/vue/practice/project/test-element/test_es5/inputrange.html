@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>input range </title>
+  <link rel="stylesheet" type="text/css" href="./base.css">
+
+  <script src="/javascripts/application.js" type="text/javascript" charset="utf-8" async defer>
+
+    // Create an element with a shadow DOM subtree.
+    var input = document.body.appendChild(document.createElement('input'));
+    // Add a child to it.
+    var test = input.appendChild(document.createElement('p'));
+    // .. with some text.
+    test.textContent = 'Team Edward';
+
+  </script>
+</head>
+<body>
+
+<div>
+  <input type="range" name="slider">
+</div>
+
+
+
+</body>
+</html>

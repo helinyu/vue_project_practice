@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <title></title>
+  <link rel="stylesheet" href="">
+  <style>
+    p {
+      color: Green;
+    }
+  input[type=range].custom {
+    -webkit-appearance: none;
+    background-color: Red;
+    width: 200px;
+  }
+  </style>
+</head>
+
+<body>
+
+
+
+<p>My Future is so bright</p>
+
+<div id="foo"></div>
+
+<div>
+  <video src="http://localhost:8000/movie/test0.mp4" autobuffer autoloop loop controls poster="/images/video.png"></video>
+</div>
+<div onclick="alert('who dat?')">
+    <audio controls autoplay src="http://localhost:8000/movie/%E6%9C%80%E8%BF%91%E6%AF%94%E8%BE%83%E7%83%A6.mp3"></audio>
+</div>
+<div onclick="alert('fired by:' + event.target)">
+    <audio controls src="http://localhost:8000/movie/%E6%9C%80%E8%BF%91%E6%AF%94%E8%BE%83%E7%83%A6.mp3"></audio>
+</div>
+
+<script>
+    var foo = document.getElementById('foo');
+    // 注意：这里只是模拟，不是真实的API
+    foo.shadow = document.createElement('p');
+    foo.shadow.textContent = 'I gotta wear shades';
+</script>
+
+</body>
+</html>

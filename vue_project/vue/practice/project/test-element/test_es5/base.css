@@ -1,0 +1,15 @@
+input[type=range].custom::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    background-color: Green;
+    opacity: 0.5;
+    width: 10px;
+    height: 40px;
+}
+
+p {
+  background-color: green;
+}
+
+span {
+  background-color: red;
+}

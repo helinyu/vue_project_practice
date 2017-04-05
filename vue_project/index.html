@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>测试vue的内容</title>
+	<link rel="stylesheet" href="">
+	<script src="http://unpkg.com/vue/dist/vue.js"></script>
+</head>
+<body>
+
+<div>
+	<label>名字：</label>
+	<input type="text" name="">
+	<br>
+	<label>密码：</label>
+	<input type="text" name="">
+	<br>
+	<button type="">登录</button>
+</div>
+
+<div id="app">
+  <p>{{ message }}</p>
+</div>
+
+<script>
+new Vue({
+  el: '#app',
+  data: {
+    message: 'Hello Vue.js!'
+  }
+})
+</script>
+	
+</body>
+</html>

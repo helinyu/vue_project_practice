@@ -1,0 +1,27 @@
+<html>
+  <head></head>
+
+  <link rel="stylesheet" type="text/css" href="./base.css">
+  <body>
+    <p id="hostElement">iajfaksdljf</p>
+<!--     <script>
+      // create shadow DOM on the <p> element above
+      var shadow = document.querySelector('#hostElement').attachShadow({mode: 'open'});
+      shadow.innerHTML = '<span>Here is some new text</span>';
+      // 为什么定义了是red，而是现实为绿色的呢？因为span这个属性都不可以看到
+    </script> -->
+
+<script>
+  // Create shadow DOM
+  var shadow = document.querySelector('#hostElement')
+    .attachShadow({mode: 'open'});
+  // Add some text to shadow DOM
+  shadow.innerHTML = '<span>Here is some new text</span>';
+  // Add some CSS to make the text red
+  shadow.innerHTML += '<style>span {background-color:yellow ; }</style>';
+  // 也就是 shadow上面的内容是通过js的代码进行修改样式
+
+</script>
+
+  </body>
+</html>
